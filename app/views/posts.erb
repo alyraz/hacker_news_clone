@@ -1,0 +1,8 @@
+<div class='container'>
+  <h2> Posts </h2>
+  <ul class='posts-list'>
+    <% @posts.each do |post| %>
+      <%= erb :_post, :locals => {:post => post} %>
+    <% end %>
+  </ul>
+</div> 

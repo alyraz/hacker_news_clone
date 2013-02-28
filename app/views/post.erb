@@ -1,0 +1,10 @@
+<div class='container'>
+  <p>Title: <%= @post.title %></p>
+  <p>Url: <%= @post.url %></p>
+  <h3> Comments </h3>
+  <ul class= 'comments-list'>
+  <% @comments.each do |comment| %> 
+    <%= erb :_comment, :locals => {:comment => comment} %>
+  <% end %>
+</ul>
+</div>

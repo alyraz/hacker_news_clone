@@ -1,0 +1,10 @@
+<div class="nav-bar">
+  <a href='/posts'> Posts </a>
+  <a href='/posts/new'> Create Post </a>
+  <% if current_user %> 
+    <a href='/logout'> Logout </a>
+  <% else %>
+    <a href='/login'> Login </a>
+  <% end %>
+</div>
+
